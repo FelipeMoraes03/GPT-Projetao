@@ -66,4 +66,4 @@ def gpt_call(message_input: str):
     gpt_response = gpt_response[0:-1]
     print(gpt_response)
 
-    return gpt_response
+    return {"message": gpt_response}
