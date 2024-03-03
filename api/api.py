@@ -72,7 +72,7 @@
 
 # APENAS PARA TESTAR O CHAT NO FRONT
 def test_chat(message_input: str):
-    response = """Olá, Isabela!
+    response_gpt = """Olá, Isabela!
 Para criar um branding eficaz para o seu Salão de Estética, siga estas etapas:\n
 1. *Definição de Público-alvo e Persona:* Comece pesquisando e definindo claramente quem são seus clientes ideais. Isso inclui idade, gênero, interesses, problemas que eles procuram resolver etc. Com essas informações, você poderá criar uma persona, que é uma representação fictícia do seu cliente ideal.\n
 2. *Análise da Concorrência:* Observe o que seus concorrentes estão fazendo em termos de marca. Isso não significa copiá-los, mas entender o mercado e encontrar uma maneira de se destacar.\n
@@ -86,4 +86,4 @@ Para criar um branding eficaz para o seu Salão de Estética, siga estas etapas:
 10. *Monitoramento e Adaptação:* Acompanhe o desempenho da sua marca e esteja pronto para fazer ajustes conforme o necessário. O mercado e as preferências dos clientes estão sempre mudando, então sua marca também precisa evoluir.\n
 *Curso sugerido:*\nBranding para Empreendedore"""
 
-    return response
+    return {"message": response_gpt}
