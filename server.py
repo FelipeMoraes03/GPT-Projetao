@@ -26,6 +26,6 @@ app.add_middleware(
 
 
 # APENAS PARA TESTAR O CHAT NO FRONT
-@app.post("/test_chat")
+@app.post("/chat")
 def test_chat_call(chat_message: ChatMessage):
     return test_chat(chat_message.message)
